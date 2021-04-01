@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { SisuContext } from '../../contexts/SisuContenxt'
 import { HeaderBase } from './styles'
 
 const Header = () => {
-  return <HeaderBase />
+  const { headerText } = useContext(SisuContext)
+
+  return (
+    <HeaderBase>
+      { headerText }
+    </HeaderBase>
+  )
 }
 
 export default Header

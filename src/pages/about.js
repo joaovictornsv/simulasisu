@@ -1,10 +1,23 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import Link from 'next/link'
+import { SisuContext } from '../contexts/SisuContenxt'
 
-export default function Home () {
+const screenData = {
+  headerText: 'Página de Sobre'
+}
+
+export default function About () {
+  const { headerText, changeText } = useContext(SisuContext)
+
+  if (headerText !== screenData.headerText) {
+    useEffect(() => {
+      changeText(screenData.headerText)
+    }, [])
+  }
+
   return (
     <>
-      <h1>Página sobre</h1>
+      <h1>About</h1>
       <Link href="/">Home</Link>
     </>
   )
