@@ -18,7 +18,7 @@ HeaderBase.Top = styled.div`
   width: 90%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   margin-top: 30px;
 `
 

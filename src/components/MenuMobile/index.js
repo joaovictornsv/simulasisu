@@ -3,7 +3,7 @@ import Menu from '@material-ui/core/Menu'
 import MenuItem from '@material-ui/core/MenuItem'
 import MenuList from '@material-ui/core/MenuList'
 import { makeStyles } from '@material-ui/core/styles'
-import { GrMenu } from 'react-icons/gr'
+import ButtonMenuMobile from '../ButtonMenuMobile'
 
 const useStyles = makeStyles(() => ({
   item: {
@@ -33,9 +33,7 @@ export default function SimpleMenu () {
 
   return (
     <div>
-      <button onClick={handleClick}>
-        <GrMenu />
-      </button>
+      <ButtonMenuMobile onClick={handleClick} />
       <Menu
         id="simple-menu"
         anchorEl={anchorEl}
