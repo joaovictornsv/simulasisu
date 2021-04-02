@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { SisuContext } from '../contexts/SisuContenxt'
 
 const screenData = {
-  headerText: 'Bem-vindo ao SimulaSisu'
+  headerText: 'Bem-vindo ao SimulaSisu, bem-vindo ao SimulaSisu de novo'
 }
 
 export default function Home () {

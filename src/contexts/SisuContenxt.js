@@ -4,7 +4,8 @@ import PropTypes from 'prop-types'
 export const SisuContext = createContext({})
 
 export function SisuProvider ({ children }) {
-  const [headerText, setHeaderText] = useState('Bem-vindo ao SimulaSisu')
+  const msg = 'Bem-vindo ao SimulaSisu, bem-vindo ao SimulaSisu de novo'
+  const [headerText, setHeaderText] = useState(msg)
 
   function changeText (text) {
     setHeaderText(text)
