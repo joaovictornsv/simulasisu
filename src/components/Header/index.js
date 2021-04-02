@@ -13,6 +13,7 @@ const Header = () => {
         <span>LOGO</span>
         <SimpleMenu />
       </HeaderBase.Top>
+
       <HeaderBase.Content>
 
         <HeaderBase.Image src={HeaderImage} draggable={false}/>
